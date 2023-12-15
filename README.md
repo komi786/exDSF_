@@ -1,16 +1,18 @@
-# Data Summary Creator 📊🔍
+# Data Description Integrator 📊📘
 
-Welcome to the Data Summary Creator, a sophisticated Python-based tool designed for data analysts and scientists. This project offers dynamic data loading, automated summary generation, and enriches datasets with meaningful descriptions. 🌟
+Welcome to the Data Description Integrator, a  Python tool to faciliate data integration. This powerful library is designed to enrich your datasets by seamlessly integrating descriptive metadata from a predefined template. 🌟
 
-## Features
+## Key Features
 
-- **Dynamic Data Loading** 📈: Load `.csv`, `.sav`, and `.xlsx` files effortlessly.
-- **Automated Summary Generation** 📝: Get comprehensive statistical summaries for dataset columns.
-- **Description Fetching** 🌐: Enrich your datasets with column descriptions from APIs or local files.
-- **Robust Error Handling** 🛠️: Built-in mechanisms for reliability and stability.
-- **Customizable Output** 📁: Export summaries and descriptions in various formats.
+- **Template-Driven Descriptions** 📘: Automatically append contextual descriptions to your dataset variables from a custom template.
+- **Versatile Data Handling** 📈: Effortlessly load and process datasets in formats like `.csv`, `.sav`, and `.xlsx`.
+- **Statistical Summary Generation** 📊: Generate detailed statistical summaries for each dataset column, offering insightful analytics at a glance.
+- **API and Local Integration** 🌐: Fetch variable descriptions from external APIs or local description files, enhancing data comprehensibility.
+- **Robust Framework** 🛠️: Experience a stable and reliable data processing environment, equipped to handle various datasets efficiently.
+- **Export Flexibility** 📁: Easily export your enriched datasets in multiple formats, tailored to your analytical needs.
 
 ## Getting Started
+
 
 ### Prerequisites
 
@@ -23,3 +25,4 @@ Welcome to the Data Summary Creator, a sophisticated Python-based tool designed 
 git clone https://github.com/komi786/exDSF_.git
 cd exDFS_
 pip install -r requirements.txt
+python integrater.py
