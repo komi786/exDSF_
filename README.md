@@ -26,3 +26,9 @@ git clone https://github.com/komi786/exDSF_.git
 cd exDFS_
 run command pip install -r requirements.txt
 run command python integrator.py
+
+###License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+###Support
+Give a ⭐️ if you found this project helpful!
