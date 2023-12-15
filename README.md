@@ -21,6 +21,6 @@ Welcome to the Data Summary Creator, a sophisticated Python-based tool designed 
 ### Installation 💻
 
 ```bash
-git clone https://github.com/yourusername/your-repository-name.git
-cd your-repository-name
+git clone https://github.com/komi786/exDSF_.git
+cd exDFS_
 pip install -r requirements.txt
