@@ -24,5 +24,5 @@ Welcome to the Data Description Integrator, a  Python tool to faciliate data int
 ```bash
 git clone https://github.com/komi786/exDSF_.git
 cd exDFS_
-pip install -r requirements.txt
-python integrater.py
+run command pip install -r requirements.txt
+run command python integrator.py
