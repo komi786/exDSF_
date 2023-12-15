@@ -15,8 +15,7 @@ Welcome to the Data Summary Creator, a sophisticated Python-based tool designed 
 ### Prerequisites
 
 - Python (3.x recommended)
-- Pandas library
-- Other dependencies listed in `requirements.txt`
+- dependencies listed in `requirements.txt`
 
 ### Installation 💻
 
