@@ -10,6 +10,7 @@ if __name__ == '__main__':
     filepath = '/Users/komalgilani/Downloads/patient_register_UMV1.sav'
     dc = DatasetCreator()
     dc.create_output_dataset(filepath)
+   # dc.create_profile("/Users/komalgilani/PycharmProjects/exDSF_/patient_registry.csv")
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

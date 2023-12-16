@@ -16,11 +16,7 @@ def get_description_from_api(column_name, api_url):
         return 'Description not available'
 
 
-def get_description_from_file(column_name, description_file_path):
-    """Fetches description of a column name from a description file."""
-    df_descriptions = pd.read_csv(description_file_path)
-    description_dict = df_descriptions.set_index('Column_Name')['Description'].to_dict()
-    return description_dict.get(column_name, 'No description available')
+
 
 
 class DatasetCreator:
@@ -35,7 +31,7 @@ class DatasetCreator:
         if file_to_load.endswith('.sav'):
             self.df_input = pd.read_spss(file_to_load)
             # Optionally save to Excel if needed
-            # self.df_input.to_excel("patient_registry.xlsx")
+            self.df_input.to_csv("data_analysis.csv",sep=',',index=False)
         elif file_to_load.endswith('.csv'):
             self.df_input = pd.read_csv(file_to_load)
         elif file_to_load.endswith('.xlsx'):
@@ -46,7 +42,7 @@ class DatasetCreator:
     def add_description_column(self, api_url=None, description_file_path=None):
         """Adds a description column using an external API or a description file."""
         descriptions = []
-        for column in self.df_output['Column_Name']:
+        for column in self.df_output['Name']:
             if api_url:
                 description = self.get_description_from_api(column, api_url)
             elif description_file_path:
@@ -56,36 +52,58 @@ class DatasetCreator:
             descriptions.append(description)
         self.df_output['Description'] = descriptions
 
+    def get_description_from_file(self,column_name, description_file_path):
+        """Fetches description of a column name from a description file."""
+        df_descriptions = pd.read_excel(description_file_path)
+        description_dict = df_descriptions.set_index('Name')['Description'].to_dict()
+        return description_dict.get(column_name, 'No description available')
     def create_output_dataset(self,file_path):
         """Creates the output dataset from the input dataset."""
-        self.load_input_dataset(file_path)
-        column_names = self.df_input.columns.tolist()
-        self.df_output = pd.DataFrame(column_names, columns=['Column_Name'])
 
         # Initialize progress bar
-        pbar = tqdm(total=len(column_names), desc="Generating Description")
 
+
+        self.load_input_dataset(file_path)
+        column_names = self.df_input.columns.tolist()
+        self.df_output = pd.DataFrame({'Name': column_names})
+        pbar = tqdm(total=len(column_names), desc="Generating Description")
         # Iterate through columns with progress update
         summary_df = []
-        for col in column_names:
-            column_summary = self.df_input[col].describe().to_frame(col).T
-            summary_df.append(column_summary)
-            pbar.update(1)  # Update progress
+        attributes = self.generate_data_analysis("data_analysis.csv")
+        for col_name,attribute in attributes.items():
+            new_row = {
+                "Name" : col_name,
+                "Type": attribute["type"],
+                "Count/Length":attribute["n"],
+                "Distinct_Value": attribute["n_distinct"],
+                "Percent_Distinct": attribute["p_distinct"],
+                "Missing_Value": attribute["n_missing"],
+                "Percent_Missing": attribute["p_missing"],
+                "Is_Unique": attribute["is_unique"],
+                "Memory_Usage": attribute["memory_size"]
+            }
+            summary_df.append(new_row)
+            pbar.update(1) # Update progress
 
-        pbar.close()  # Close the progress bar
 
-        summary_df = pd.concat(summary_df).reset_index(drop=True)
-        self.df_output = pd.concat([self.df_output, summary_df], axis=1)
+        self.df_output = pd.DataFrame(summary_df)
+        #summary_df = pd.concat(summary_df).reset_index(drop=True)
+        self.add_description_column(description_file_path="/Users/komalgilani/Desktop/PhD_Maastricht/Datasets/Patient_RegistryUM/description_registry.xlsx")
         filename = os.path.basename(file_path)
+        filename = os.path.splitext(filename)[0]
         output_file_path = f"{filename}_summary.csv"
         self.save_output_dataset(output_file_path)
+        pbar.close()  # Close the progress bar
+        print(f"Summary written to {output_file_path}")
 
     def save_output_dataset(self, output_file_path):
         """Saves the output dataset to a file."""
         self.df_output.to_csv(output_file_path)
 
-    def create_profile(self, file_path):
-        """Generates a profile report."""
+    def generate_data_analysis(self, file_path):
+        """Generates a profile report and returns column attributes."""
         self.load_input_dataset(file_path)
-        profile = ProfileReport(self.df_input, explorative=True)
-        profile.to_file("profile_report.html")
+        profile = ProfileReport(self.df_input, minimal=True, explorative=True)
+        attributes = profile.get_description().variables
+        return attributes
+

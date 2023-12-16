@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61482436-2b79-4b76-bf9a-2499d3cf7b63" name="Changes" comment="">
+    <list default="true" id="61482436-2b79-4b76-bf9a-2499d3cf7b63" name="Changes" comment="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/integrator_py.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generate_summary.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_summary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/integrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/integrator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient_register_UMV1.sav_summary.csv" beforeDir="false" afterPath="$PROJECT_DIR$/patient_register_UMV1.sav_summary.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -47,6 +50,7 @@
     "Python.integrator.py.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/komalgilani/PycharmProjects/exDSF_",
@@ -121,27 +125,6 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="integrator.py" type="PythonConfigurationType" factoryName="Python">
-      <module name="exDSF_" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.9" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/integrator.py" />
-      <option name="PARAMETERS" value="$FilePath$" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -268,8 +251,33 @@
       <workItem from="1702646613084" duration="2035000" />
       <workItem from="1702650148780" duration="6118000" />
       <workItem from="1702736210026" duration="111000" />
-      <workItem from="1702736322519" duration="530000" />
+      <workItem from="1702736322519" duration="10303000" />
     </task>
+    <task id="LOCAL-00001" summary="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration">
+      <option name="closed" value="true" />
+      <created>1702736969480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702736969480</updated>
+    </task>
+    <task id="LOCAL-00002" summary="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration">
+      <option name="closed" value="true" />
+      <created>1702737014982</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702737014982</updated>
+    </task>
+    <task id="LOCAL-00003" summary="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration">
+      <option name="closed" value="true" />
+      <created>1702737057850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702737057850</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +293,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
