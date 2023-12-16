@@ -8,7 +8,6 @@ Welcome to the Data Description Integrator, a  Python tool to faciliate data int
   - **Versatile Data Handling** 📈: Effortlessly load and process datasets in formats like `.csv`, `.sav`, and `.xlsx`.
   - **Statistical Summary Generation** 📊: Generate detailed statistical summaries for each dataset column, offering insightful analytics at a glance.
   - **API and Local Integration** 🌐: Fetch variable descriptions from external APIs or local description files, enhancing data comprehensibility.
-  - **Robust Framework** 🛠️: Experience a stable and reliable data processing environment, equipped to handle various datasets efficiently.
   - **Export Flexibility** 📁: Easily export your enriched datasets in multiple formats, tailored to your analytical needs.
 
 ## Getting Started
