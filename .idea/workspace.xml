@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61482436-2b79-4b76-bf9a-2499d3cf7b63" name="Changes" comment="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/integrator_py.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_summary.py" beforeDir="false" afterPath="$PROJECT_DIR$/generate_summary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/integrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/integrator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient_register_UMV1.sav_summary.csv" beforeDir="false" afterPath="$PROJECT_DIR$/patient_register_UMV1.sav_summary.csv" afterDir="false" />
-    </list>
+    <list default="true" id="61482436-2b79-4b76-bf9a-2499d3cf7b63" name="Changes" comment="code update&#10;1- Added Data Analysis Profiling using ydata-profiling&#10; . Summary File include extensive description about and description of variables" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -251,7 +245,7 @@
       <workItem from="1702646613084" duration="2035000" />
       <workItem from="1702650148780" duration="6118000" />
       <workItem from="1702736210026" duration="111000" />
-      <workItem from="1702736322519" duration="10303000" />
+      <workItem from="1702736322519" duration="10724000" />
     </task>
     <task id="LOCAL-00001" summary="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration">
       <option name="closed" value="true" />
@@ -277,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702737057850</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="code update&#10;1- Added Data Analysis Profiling using ydata-profiling&#10; . Summary File include extensive description about and description of variables">
+      <option name="closed" value="true" />
+      <created>1702753851327</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702753851327</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +298,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="code update&#10;1- Majore changes in integrator code &#10; . Removed return class in load function&#10; . Added Progress Track for Summary integration" />
+    <MESSAGE value="code update&#10;1- Added Data Analysis Profiling using ydata-profiling&#10; . Summary File include extensive description about and description of variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="code update&#10;1- Added Data Analysis Profiling using ydata-profiling&#10; . Summary File include extensive description about and description of variables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
