@@ -1,4 +1,4 @@
-# Data Description Integrator 📊📘
+# Descriptive Data Summary 📊📘
 
 Welcome to the Data Profiling and Description Integrator, a  Python tool to faciliate data profiling and  integration. This Toll is designed can help to design data summary including statistical summary of attributes and integrating descriptive metadata from a predefined template. 🌟
 
