@@ -7,10 +7,9 @@ from generate_summary import *
 # Press the green button in the gutter to run the script.
 import generate_summary
 if __name__ == '__main__':
-    filpath = 'patient_register_UMV1.sav'
-    dc = DatasetCreator(filepath)
-    dc.create_output_dataset()
-
+    filepath = '/Users/komalgilani/Downloads/patient_register_UMV1.sav'
+    dc = DatasetCreator()
+    dc.create_output_dataset(filepath)
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

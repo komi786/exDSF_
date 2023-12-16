@@ -3,3 +3,4 @@ requests~=2.31.0
 numpy~=1.25.0
 pyreadstat
 openpyxl
+tqdm
