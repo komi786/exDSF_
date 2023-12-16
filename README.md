@@ -1,6 +1,6 @@
 # Data Description Integrator 📊📘
 
-Welcome to the Data Description Integrator, a  Python tool to faciliate data integration. This powerful library is designed to enrich your datasets by seamlessly integrating descriptive metadata from a predefined template. 🌟
+Welcome to the Data Profiling and Description Integrator, a  Python tool to faciliate data profiling and  integration. This Toll is designed can help to design data summary including statistical summary of attributes and integrating descriptive metadata from a predefined template. 🌟
 
 ## Key Features
 
